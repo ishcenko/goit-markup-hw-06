@@ -319,6 +319,7 @@ img {
     /* transform: translateY(-100%); */
 }
 .input-name {
+    width: 100%;
 
     /* margin: 0; */
     font: inherit;
@@ -350,6 +351,7 @@ img {
     /* transform: translateY(-100%); */
 }
 .input-phone {
+    width: 100%;
     /* margin: 0; */
     font: inherit;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -377,6 +379,7 @@ img {
     /* transform: translateY(-100%); */
 }
 .input-email {
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
@@ -414,8 +417,10 @@ textarea {
 }
 .form-text-input {
     position: relative;
+    content: "";
     padding-top: 8px;
     padding-left: 16px;
+    width: 100%;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.04em;
