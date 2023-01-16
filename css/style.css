@@ -379,6 +379,12 @@ img {
     /* padding-top: 4px; */
     transform: translateY(-100%);
 }
+input,
+textarea {
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+}
 .input-email {
     margin: 0;
     top: 0;
