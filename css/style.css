@@ -463,11 +463,16 @@ textarea {
     padding: 16px 32px;
     border: none;
     transition-property: background, box-shadow, border-radius;
-    transition-duration: 3000ms;
+    transition-duration: 250ms;
     transition-timing-function: var(--hov-foc-cubic);
 
 }
-.btn-send:hover, .btn-send:focus {
+.btn-send:hover {
+    background: var(--color-avtive);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.btn-send:focus {
     background: var(--color-avtive);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
