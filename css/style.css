@@ -402,9 +402,9 @@ img {
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--form-color);
-    /* padding: 0; */
+    padding-top: 4px;
     
-    /* display: block; */
+    display: block;
     transform: translateY(-100%);
 }
 .form-text-input {
@@ -857,8 +857,8 @@ textarea {
     letter-spacing: 0.02em;
     color: var(--white-color);
 }
-.comment {
+/* .comment {
     display: flex;
     padding: 10px;
     margin-left: 0;
-}
+} */
