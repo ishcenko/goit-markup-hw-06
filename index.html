@@ -365,26 +365,30 @@
             <!-- модалка -->
             <div class="backdrop is-hidden" data-modal data-backdrop>
                 <div class="modal">
-                    <form class="js-speaker-form">
-                        <p>Leave your contacts and we will call you back</p>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-<br>
-                        <label for="phone">Phone</label>
+                    <!-- Form -->
+                    <div class="form-modal">
+                        <p class="form-title">Leave your contacts and we will call you back</p>
+                    <div class="section-form">
+                        <label for="name" class="form-name">Name</label>
+                        <input class="input-name" type="text" name="name" id="name">
+                    </div>
+                    <div class="section-form">
+                        <label for="phone" class="form-pfone">Phone</label>
                         <input type="tel" name="phone" id="phone">
-<br>
-                        <label for="mail">Email</label>
+                    </div>
+                        
+                        <label for="mail" class="form-email">Email</label>
                         <input type="email" name="mail" id="mail">
-<br>
+
                         <label for="comment" class="comment">Comment</label>
-                        <textarea type="text" name="comment" rows="5" placeholder="Text input">
+                        <textarea class="form-text-input" type="text" name="comment" rows="5" placeholder="Text input">
 
                         </textarea>
                         <!-- <input type="text" name="comment" id="comment" placeholder="Text input"> -->
-<br>
+
                         <input type="checkbox" name="send" value="checkbox" id="checkbox">
                         <label for="checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
-<br>
+
                         <!-- <input type="radio" name="confirmation" value="radio" id="radio">
                         <label for="">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label> -->
                         <!-- Відправка -->
@@ -392,7 +396,7 @@
 
 
                    
-                    </form>
+                    </div>
                     <button class="btn-close" data-modal-close>
                         <svg class="icon-close-btn"  width="8" height="8">
                             <use href="./images/symbol-defs.svg#icon-close-black"></use>

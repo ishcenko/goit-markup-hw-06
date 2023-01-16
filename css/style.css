@@ -11,6 +11,7 @@
     --color-avtive: #404BBF;
     --hov-foc-cubic: cubic-bezier(0.4, 0, 0.2, 1);
     --time-animation: 250ms;
+    --form-color: #8E8F99;
 }
 
 body {
@@ -288,6 +289,81 @@ img {
     position: absolute;
     margin: 0;
 }
+/* .form-modal {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto; */
+}
+.form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    /* padding-top: 72px; */
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
+    /* padding-bottom: 16px; */
+    /* display: flex; */
+    /* width: 360px; */
+    /* height: 24px; */
+    /* align-items: center;
+    justify-content: space-between; */
+}
+/* label {
+    display: flex;
+    flex-direction: column;
+} */
+/* .section-form {
+    display: block;
+    width: 360px;
+    height: 60px;
+    gap: 8px; 
+}*/
+.form-name {
+    font-size: 12px;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    color: var(--form-color);
+    /* display: block; */
+    /* padding: 4px; */
+}
+.input-name {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    /* height: 40px; */
+    /* width: 360px; */
+}
+.form-pfone {
+    font-size: 12px;
+    line-height: 1.17;    
+    letter-spacing: 0.01em;
+    color: var(--form-color);
+    /* display: block; */
+}
+.form-email {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--form-color);
+    /* display: block; */
+}
+.comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--form-color);
+    /* display: block; */
+}
+.form-text-input {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 177, 0.5)
+}
+
+/* 2 section */
 .visually-hidden {
     color: rgba(0, 0, 0, 0);
     position: absolute;
