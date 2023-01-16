@@ -420,11 +420,38 @@ img {
     color: rgba(117, 117, 177, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-top: 16px;
 }
 textarea {
     /* padding: 8px; */
     /* font-family: inherit; */
     /* font-size: inherit; */
+}
+.text-checkbox {
+    font-size: 12px;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-top: 16px;
+    /* padding-top: 24px; */
+}
+.btn-send {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 169px;
+    margin-top: 24px;
+    color: var(--white-color);
+    background: var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
+
+}
+.btn-send:hover {
+    background: var(--color-avtive);
 }
 /* 2 section */
 .visually-hidden {
