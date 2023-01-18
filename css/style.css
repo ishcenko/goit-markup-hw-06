@@ -442,6 +442,13 @@ textarea {
     color: rgba(117, 117, 177, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    /* outline: none; */
+}
+.form-text-input:focus + ::placeholder{
+    color: var(--primary-brand);
+}
+.section-textarea textarea:focus + ::placeholder {
+    border: var(--primary-brand);
 }
 .section-form input:focus {
     border: 1px solid var(--primary-brand);
