@@ -430,10 +430,11 @@ textarea {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    /* padding-top: 8px; */
-    /* padding-left: 16px; */
+    padding-top: 8px;
+    padding-left: 16px;
     outline: transparent;
     resize: none;
+    color: black;
     
 } 
 .form-text-input::placeholder {
@@ -443,8 +444,8 @@ textarea {
     padding-left: 16px;
     line-height: 16;
     letter-spacing: 0.04em;
-    color: rgba(117, 117, 177, 0.5);
-
+    /* color: rgba(117, 117, 177, 0.5); */
+    color: black;
 
 }
 
