@@ -311,6 +311,7 @@ img {
 }
 .section-form {
     display: block;
+    width: 360px;
     /* flex-direction: column; */
     margin-bottom: 8px;
     
@@ -335,7 +336,7 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: calc(100% - 50px);
+    width: 100%;
         /* padding-left: 38px; */
 }
 .icon-person {
@@ -369,7 +370,7 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: calc(100% - 50px);
+    width: 100%;
 }
 .icon-phone {
     position: relative;
@@ -397,13 +398,12 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: calc(100% - 50px);
+    width: 100%;
 }
 .icon-mail {
     position: relative;
     top: 0;
     left: 0;
-    /* padding-left: 7px; */
 
 }
 .icon-item-mail {
@@ -417,10 +417,13 @@ img {
 input,
 textarea {
     /* padding: 8px; */
-    font-family: inherit;
-    font-size: inherit;
+    /* font-family: inherit; */
+    /* font-size: inherit; */
 }
-
+.section-textarea {
+    /* width: 360px; */
+    /* margin: 0 auto; */
+}
 .comment {
     display: block;
     font-size: 12px;
@@ -434,8 +437,10 @@ textarea {
     content: "";
     top: 0;
     left: 0;
+    padding-top: 8px;
     padding-left: 16px;
-    width: calc(100% - 24px);
+    width: 382px;
+    height: 120px;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.04em;
