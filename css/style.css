@@ -255,8 +255,8 @@ img {
     left: 50%;
     width: 408px;
     /* height: 576px; */
-    padding-left: 24px;
-    padding-right: 24px;
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -265,7 +265,7 @@ img {
     transition: transform var(--time-animation) var(--hov-foc-cubic);
 }
 .btn-close {
-    position: relative;
+    /* position: relative; */
     top: 24px;
     right: 24px;
     width: 24px;
@@ -292,8 +292,8 @@ img {
     margin: 0;
 }
 .form-modal {
-    /* padding-left: 24px; */
-    /* padding-right: 24px; */
+    padding-left: 24px;
+    padding-right: 24px;
     /* margin: 0 auto; */
 }
 .form-title {
@@ -310,6 +310,7 @@ img {
     justify-content: center;
 }
 .section-form {
+    margin: 0 auto;
     display: block;
     width: 360px;
     /* flex-direction: column; */
@@ -336,16 +337,14 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: 100%;
+    width: calc(100% - 38px);
         /* padding-left: 38px; */
 }
 .icon-person {
     position: relative;
     top: 0;
     left: 0;
-    /* width: calc(100% - 24px); */
-    /* padding-left: 7px; */
-        /* padding-left: 38px; */
+    /* padding-left: 38px; */
 }
 .icon-item-person {
     position: absolute;
@@ -353,9 +352,6 @@ img {
     left: 19px;
     fill: var(--dark);
     transform: translateY(-50%);
-    
-    /* padding-left: 38px; */
-
 }
 .form-pfone {
     display: flex;
@@ -370,14 +366,12 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: 100%;
+    width: calc(100% - 38px);
 }
 .icon-phone {
     position: relative;
     top: 0;
     left: 0;
-    /* width: 100%; */
-    /* padding-left: 7px; */
 }
 .icon-item-phone {
     position: absolute;
@@ -398,7 +392,7 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: 100%;
+    width: calc(100% - 38px);
 }
 .icon-mail {
     position: relative;
@@ -412,17 +406,15 @@ img {
     left: 19px;
     fill: var(--dark);
     transform: translateY(-50%);
-
 }
 input,
 textarea {
-    /* padding: 8px; */
-    /* font-family: inherit; */
-    /* font-size: inherit; */
+    font-family: inherit;
+    font-size: inherit;
 }
 .section-textarea {
-    /* width: 360px; */
-    /* margin: 0 auto; */
+    width: 360px;
+    margin: 0 auto;
 }
 .comment {
     display: block;
@@ -430,31 +422,28 @@ textarea {
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--form-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 .form-text-input {
-    position: relative;
-    content: "";
-    top: 0;
-    left: 0;
-    padding-top: 8px;
-    padding-left: 16px;
-    width: 382px;
+    width: 100%;
     height: 120px;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-    color: rgba(117, 117, 177, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    /* outline: none; */
+    padding-top: 8px;
+    padding-left: 16px;
+    outline: none;
+    resize: none;
+    
+} 
+.form-text-input::placeholder {
+    font-style: 12px;
+    line-height: 16;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 177, 0.5);
+
+
 }
-.form-text-input:focus + ::placeholder{
-    color: var(--primary-brand);
-}
-.section-textarea textarea:focus + ::placeholder {
-    border: var(--primary-brand);
-}
+
 .section-form input:focus {
     border: 1px solid var(--primary-brand);
 
