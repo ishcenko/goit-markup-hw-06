@@ -435,16 +435,29 @@ img {
     justify-content: center;
     fill: transparent;
 } */
-.text-checkbox::before {
-    contain: "";
+.chec-text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+}
+.chec-text::before {
+    content: "";
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--dark);
-    border-radius: 2px solid var(--dark);
+    border-radius: 2px;
     display: block;
-    /* margin-right: 8px; */
-    /* transition: border 250ms backgraund-color 250ms var(--hov-foc-cubic); */
+    margin-right: 8px;
 }
+.text-checkbox:checked + chec-text::before {
+    background-color: var(--primary-brand);
+    border: none;
+    background-image: url(../images/vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* .chec-text::after {
     contain: "";
     width: 16px;
