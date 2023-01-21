@@ -934,10 +934,10 @@ img {
     padding-left: 16px;
 }
 .inpyt-mail::placeholder {
-    /* font-size: 12px; */
-    /* line-height: 2; */
-    /* letter-spacing: 0.04em; */
-    /* color: rgba(255, 255, 255, 0.6); */
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
     /* padding-left: 116px; */
 }
 .button-sub {
