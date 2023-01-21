@@ -333,6 +333,10 @@ img {
     border: 1px solid var(--primary-brand);
 
 }
+.icon-item-person:focus {
+    fill: var(--primary-brand);
+    
+}
 .form-label {
     position: relative;
     display: flex;
@@ -345,9 +349,15 @@ img {
     top: 50%;
     left: 19px;
     transform: translateY(-10%);
-    fill: var(--dark);
+    fill: var(--dark);transition-property: border;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--hov-foc-cubic);
 }
 .span-name {
+    font-size: 12px;
+    line-height: 1.33;    
+    letter-spacing: 0.04em;
     display: block;
     margin-bottom: 4px;
     color: var(--form-color);
@@ -356,13 +366,13 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: calc(100% - 38px);
+    /* width: calc(100% - 38px); */
         /* padding-left: 38px; */
 }
 .modal-textarea {
     display: block;
-    /* width: 360px; */
-    max-width: 360px;
+    width: 360px;
+    /* max-width: 360px; */
     margin-bottom: 16px;
 }
 .text-comment {
@@ -375,13 +385,14 @@ img {
 }
 .comment {
     margin-top: 4px;
-    width: 100%;
+    width: calc(100% - 19px);
 
     height: 120px;
     display: block;
     resize: none;
     border-radius: 4px;
-    border: 1px solid #21212133;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    /* border: 1px solid #21212133; */
     padding-left: 16px;
     padding-top: 8px;
     transform: scale(1);
@@ -399,9 +410,11 @@ img {
 }
 
 .comment::placeholder {
-    font-style: 12px;
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: 0.04em;
-    color: #75757580;
+    color: rgba(117, 177, 177, 0.5);
+
 }
 /* Policy */
 .chec-text {
@@ -894,12 +907,65 @@ img {
 .icon-link-soc-ftr:focus {
     background: #31D0AA;
 }
+.ftr-form {
+    margin-left: 88px;
+}
+.form-sub {
+    display: flex;
+    
+}
 .ftr-subscribe {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
+    margin-bottom: 16px;
+}
+.inpyt-mail {
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}
+.inpyt-mail::placeholder {
+    /* font-size: 12px; */
+    /* line-height: 2; */
+    /* letter-spacing: 0.04em; */
+    /* color: rgba(255, 255, 255, 0.6); */
+    /* padding-left: 116px; */
+}
+.button-sub {
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 24px;
+    display: flex;
+    margin-left: 16px;
+
+    background-color: var(--primary-brand);
+    border-radius: 4px;
+    border: none;
+    
+}
+.icon-sub {
+    fill: var(--white-color);
+}
+.btn-sub {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-right: 16px;
 }
 /* .comment {
     display: flex;

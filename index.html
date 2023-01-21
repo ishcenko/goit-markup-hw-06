@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-        <link rel="stylesheet" href="./css/modern-normalize.css">
+        
+        <!-- <link rel="stylesheet" href="./css/modern-normalize.css"> -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -351,11 +352,18 @@
                     </ul>
         </div>
         <!-- Форма для підписки -->
-        <div>
-            <h4 class="ftr-subscribe">Subscribe</h4>
-            <form class="js-speaker-form">
-                <input type="text" name="name">
-            </form>
+        <div class="ftr-form">
+            <p class="ftr-subscribe">Subscribe</p>
+            <div class="form-sub">
+                <input class="input-mail" type="email" name="email" id="mail-sub" placeholder="E-mail">
+                
+                    <!-- <input class="input-mail" type="email" name="email" id="mail-sub" placeholder="E-mail"> -->
+                <button class="button-sub" type="submit"><span class="btn-sub">Subscribe</span>
+                    <svg class="icon-sub" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
         
         </div>
