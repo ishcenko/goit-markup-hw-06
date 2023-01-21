@@ -951,6 +951,9 @@ img {
     background-color: var(--primary-brand);
     border-radius: 4px;
     border: none;
+    /* transition-property: background, box-shadow, border-radius;
+        transition-duration: 250ms;
+        transition-timing-function: var(--hov-foc-cubic); */
     
 }
 .icon-sub {
@@ -966,7 +969,18 @@ img {
     text-align: center;
     letter-spacing: 0.04em;
     padding-right: 16px;
+    
 }
+/* .button-sub:hover {
+    background: var(--color-avtive);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.button-sub:focus {
+    background: var(--color-avtive);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+} */
 /* .comment {
     display: flex;
     padding: 10px;
